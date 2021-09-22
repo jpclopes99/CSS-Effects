@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SVG Image Transform on Scroll</title>
+    <link  rel="stylesheet" href="svg-image-transform-on-scroll.css">
+</head>
+<body>
+    <div class="banner">
+        <video autoplay="" muted="" loop="">
+            <source src="bg.mp4" type="video/mp4">
+        </video>
+        <div id="bg"></div>
+
+    </div>
+
+   <script type="text/javascript">
+        let bg = document.querySelector('#bg');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            bg.style.backgroundSize = 100+value*2 + "px";
+
+        })
+
+
+    </script>
+
+
+</body>
+</html>

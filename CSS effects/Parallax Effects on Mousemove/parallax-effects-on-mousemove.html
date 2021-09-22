@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Parallax Effects On MouseMove</title>
+    <link  rel="stylesheet" href="parallax-effects-on-mousemove.css">
+</head>
+<body>
+    <section>
+
+        <div id="bg"></div>
+        <h2>2.5D Parallax Effects</h2>
+        <img src = "img.png" class = "girl">
+    </section>
+
+   <script type="text/javascript">
+        var position = document.documentElement;
+        position.addEventListener("mousemove", e => {
+        position.style.setProperty('--x', e.clientX + "px");
+        })
+    </script>
+
+
+</body>
+</html>
